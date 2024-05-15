@@ -1,0 +1,86 @@
+body {
+    font-family: "Roboto";
+    margin: 0px;
+}
+header{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+header h1{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.orange{
+    color: #ff5c0f
+}
+.blue{
+    color: #20a8b4
+}
+button {
+    background-color: #20a8b4;
+    padding: 12px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: start;
+}
+button:hover{
+    background-color: #ff5c0f;
+}
+nav ul{
+    padding-left: 0;
+    padding-bottom: 10px;
+    margin: 0;
+}
+header li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+a{
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+header li a:hover{
+    color:#ff5c0f
+}
+main{
+    padding: 100px 40px
+}
+
+.img{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .img{
+        display: flex;
+        height: 400px;
+    }
+    header{
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+    nav li{
+        padding-right: 10px;
+    }
+    button{
+        width: auto;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+}
